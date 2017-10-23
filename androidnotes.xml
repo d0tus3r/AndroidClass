@@ -1,0 +1,60 @@
+<!--android notes
+//Android Views
+	TextView : shows text
+	ImageView : shows image
+	Button : displays button
+	
+	Example TextView xml within a LinearLayout
+-->
+<LinearLayout
+	<!-- values below are attributes and :attributevalues -->
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<!--linearlayout parameters go within the first> and will close out later with a </LinearLayout>-->
+	<TextView
+		android:text="Happy Birthday!"
+		android:background="@android:color/darker_gray"
+		android:textColor="@android:color/white"
+		android:layout_width="150dp"
+		android:layout_height="75dp" />
+	<TextView
+		android:text="You're the best!"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	
+</LinearLayout>
+
+<!-- Density-Independent Pixels (dp prounounced dip) are used to maintain size when 
+		used on varying resolutions 2dp x 2dp is the same on all devices
+		
+	**General rule of thumb is to make touch targets atleast 48dp**
+	
+	use sp for font size / based on user preference for font size in settings
+	reference google material design principles for font sizes color etc etc
+	https://material.io/guidelines/style/typography.html#typography-styles
+	https://material.io/guidelines/style/color.html#color-color-palette
+	
+	
+	ImageView Notes
+-->
+<LinearLayout
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<!--src notes drawable folder / image name 
+		scaleType : center (centers but doesn't crop or scale // centerCrop centers and scales to fit-->
+	<ImageView
+		android:src="@drawable/cake"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:scaleType="centerCrop"/>
+
+</LinearLayout>
+
+<!--View Group Notes
+		LinearLayout - content aligned in vertical or horizontal colum / row
+		Relative Layout - child positions are relative to parent layout or other children layouts 
+
+ -->
+
