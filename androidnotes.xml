@@ -43,7 +43,8 @@
 	android:layout_height="wrap_content"
 	android:orientation="vertical">
 	<!--src notes drawable folder / image name 
-		scaleType : center (centers but doesn't crop or scale // centerCrop centers and scales to fit-->
+		scaleType : center (centers but doesn't crop or scale // centerCrop centers and scales to fit\
+		match_parent is also usable for width/height-->
 	<ImageView
 		android:src="@drawable/cake"
 		android:layout_width="wrap_content"
@@ -58,3 +59,83 @@
 
  -->
 
+ <RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent">
+	
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentTop="true"
+		android:textAppearance="?android:textAppearanceLarge"
+		android:text="Happy" />
+		
+		
+    <TextView
+        android:id="@+id/me_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/lyla_text_view"
+        android:textSize="24sp"
+        android:text="Me" />
+		
+</RelativeLayout>
+
+
+<!-- examples of id + relative layouts -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ocean" />
+
+    <TextView
+        android:id="@+id/pebble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pebble Beach"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_toRightOf="@id/pic" />
+
+    <TextView
+        android:id="@+id/calif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="California"
+        android:layout_toRightOf="@id/pic"
+        android:layout_below="@id/pebble"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+    <TextView
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 miles away"
+        android:layout_toRightOf="@id/pic" 
+        android:layout_below="@id/calif"
+        
+        android:textAppearance="?android:textAppearanceSmall" />
+
+</RelativeLayout>
+
+<!-- Padding and Margin Notes
+Padding is handled by TextView
+Margin is handled by ViewGroup
+
+android:padding="8dp"
+can use paddingLeft paddingTop etc
+
+
+
+
+	
