@@ -174,6 +174,38 @@ examples of padding / margin
 
 </LinearLayout>
 
+<!--Button notes and onClick
+
+-->
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Order"
+    android:onClick="submitOrder"/>
+	
+<!-- then in the main activity you'd have
+ public void submitOrder(View view) {
+        display(1);
+    }
+
+    /**
+     * This method displays the given quantity value on the screen.
+     */
+    private void display(int number) {
+        TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
+        quantityTextView.setText("" + number);
+    }
+-->
+
+Breakpoints / debug informalequation
+https://developer.android.com/studio/debug/index.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics
+
+
+view layouts can be nested
+
+
+
 
 
 	
