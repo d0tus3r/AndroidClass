@@ -204,7 +204,9 @@ https://developer.android.com/studio/debug/index.html?utm_source=udacity&utm_med
 
 view layouts can be nested
 
-
+calling methods on objects:
+change textview text color:
+	nameoftextview.setTextColor(Color.RED);
 
 
 
