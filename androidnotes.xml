@@ -246,4 +246,15 @@ Style examples
 
 </resources>
 
+
+click listeners
+
+        TextView teamAView = (findViewById(R.id.team_a_score));
+        teamAView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                teamAScore++;
+                displayForTeamA(teamAScore);
+            }
+        });
 	
