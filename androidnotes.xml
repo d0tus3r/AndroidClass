@@ -257,4 +257,26 @@ click listeners
                 displayForTeamA(teamAScore);
             }
         });
+		
+		
+		
+//array list notes
+
+ArrayList<String> musicLibrary = new ArrayList<String>(); //create
+musicLibrary.add("Yellow Submarine"); //add
+musicLibrary.get(0); //access
+musicLibrary.remove(1); //remove
+musicLibrary.size(); get array list length
+
+
+//creating new views via code and adding to the root layout
+        ArrayList<String> words = new ArrayList<String>();
+        words.add("one");
+		
+		LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
+        TextView wordView = new TextView(this);
+        wordView.setText(words.get(0));
+        rootView.addView(wordView);
+
+
 	
