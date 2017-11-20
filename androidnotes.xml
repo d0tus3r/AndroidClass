@@ -364,3 +364,7 @@ public class AndroidFlavorAdapter extends ArrayAdapter<AndroidFlavor> {
 }
 -->
 
+View Visibility
+textView.setVisibility(View.VISIBLE);
+					  (View.INVISIBLE);
+					  (View.GONE);
